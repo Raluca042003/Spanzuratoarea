@@ -1,0 +1,179 @@
+body {
+  background: linear-gradient(135deg, #f7ebdf, #e7d3c1);
+  font-family: "Poppins", sans-serif;
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0;
+  color: #6b4f35;
+}
+
+.welcome {
+  font-size: 22px;
+  margin: 2px 0 10px;
+  color: #8a674f;
+}
+
+.question-box {
+  background: #f1e2d2;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-size: 22px;
+  font-weight: 600;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.word-display {
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.keyboard-container {
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  gap: 7px;
+  justify-content: center;
+}
+
+.keyboard-container button {
+  height: 50px;
+  font-size: 20px;
+  background: white;
+  border: 2px solid #cfbba9;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #6b4f35;
+  cursor: pointer;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-panel img {
+  width: 360px !important;
+}
+
+.status {
+  margin-top: 14px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #8b452a;
+  letter-spacing: 1px;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.15);
+}
+
+.message {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message button {
+  background: #c69c72;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.exit-btn {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.exit-btn:hover {
+  background: #e74c3c;
+}
+.question-title {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+button svg {
+  vertical-align: middle;
+}
+.question-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #8b5e3c;
+  margin-bottom: 10px;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.question-icon {
+  color: #4aa3df;
+}
+
+.trophy-icon {
+  color: #d4a017;
+}
+
+.lose-icon {
+  color: #d9534f;
+}
+
+.play-again-btn,
+.exit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
